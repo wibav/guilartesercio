@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-labelledby="title desc">
+  <title id="title">Guilarte &amp; Servicios</title>
+  <desc id="desc">Logo circular dorado con nombre Guilarte &amp; Servicios</desc>
+  <defs>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="text" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef3c7" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <style>
+      .outer { fill: none; stroke: url(#ring); stroke-width: 26; }
+      .inner { fill: #0b0b0b; stroke: #fbbf24; stroke-width: 2; }
+      .main { fill: url(#text); font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif; font-weight: 800; letter-spacing: 1px; }
+      .sub { fill: #fef3c7; font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif; font-weight: 600; letter-spacing: 0.5px; }
+      .tiny { fill: #e5e7eb; font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif; font-weight: 500; letter-spacing: 0.5px; }
+    </style>
+  </defs>
+
+  <circle cx="250" cy="250" r="220" class="outer" />
+  <circle cx="250" cy="250" r="200" class="inner" />
+
+  <g transform="translate(250 210)" text-anchor="middle">
+    <text y="0" class="main" font-size="46">GUILARTE &amp;</text>
+    <text y="44" class="main" font-size="46">SERVICIOS</text>
+  </g>
+
+  <text x="250" y="280" class="sub" font-size="20" text-anchor="middle">CONSTRUCCIÓN Y SERVICIOS</text>
+  <text x="250" y="305" class="tiny" font-size="13" text-anchor="middle">REFORMAS · LIMPIEZA · MANTENIMIENTO</text>
+</svg>
