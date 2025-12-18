@@ -68,55 +68,131 @@ export default function Hero() {
 
           {/* Bloques Visuales de Servicios */}
           <div className="flex-1 w-full">
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white rounded-2xl shadow-xl border border-orange-100 p-8 flex flex-col gap-4">
-                <div className="flex items-center gap-3">
-                  <span className="text-3xl">🏗️</span>
-                  <p className="text-xs font-semibold tracking-wide text-orange-600 uppercase">
-                    Reformas Integrales
-                  </p>
-                </div>
-                <div className="space-y-3">
-                  <h3 className="text-2xl font-bold text-gray-900">
-                    Transforma tu Hogar
-                  </h3>
-                  <p className="text-gray-700">
-                    Especialistas en Reformas de Cocinas y Baños de alta
-                    calidad. Gestionamos permisos y plazos en toda la provincia
-                    de Alicante. ¡Pisos modernos sin preocupaciones!
-                  </p>
-                </div>
-                <a
-                  href="/reformas"
-                  className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-orange-500 hover:bg-orange-600 text-white font-semibold transition-colors"
-                >
-                  VER REFORMAS INTEGRALES
-                </a>
-              </div>
+            <div className="relative w-full max-w-xl mx-auto lg:ml-auto">
+              <div
+                className="absolute inset-x-6 -top-10 h-48 bg-orange-200/40 blur-3xl rounded-full hidden lg:block"
+                aria-hidden="true"
+              />
 
-              <div className="bg-gray-900 rounded-2xl shadow-xl border border-gray-800 p-8 flex flex-col gap-4 text-white">
-                <div className="flex items-center gap-3">
-                  <span className="text-3xl">🧼</span>
-                  <p className="text-xs font-semibold tracking-wide text-orange-300 uppercase">
-                    Limpieza Profesional
-                  </p>
+              <div className="relative flex flex-col gap-6 lg:gap-8">
+                <div className="flex flex-wrap gap-4 justify-between items-center px-6 py-4 bg-white/80 backdrop-blur border border-orange-100 rounded-full shadow-lg">
+                  <div className="flex items-center gap-3">
+                    <span className="w-10 h-10 rounded-full bg-orange-500/10 text-orange-500 flex items-center justify-center text-lg font-bold">
+                      ⭐
+                    </span>
+                    <div>
+                      <p className="text-sm font-semibold text-gray-900">
+                        +15 años de experiencia
+                      </p>
+                      <p className="text-xs text-gray-500">
+                        Reformas integrales y mantenimiento continuo
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <span className="w-10 h-10 rounded-full bg-orange-500 text-white flex items-center justify-center text-lg font-bold">
+                      24/7
+                    </span>
+                    <div>
+                      <p className="text-sm font-semibold text-gray-900">
+                        Soporte cercano
+                      </p>
+                      <p className="text-xs text-gray-500">
+                        Atención personalizada en toda la provincia
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className="space-y-3">
-                  <h3 className="text-2xl font-bold">
-                    Cuidado Profesional Impecable
-                  </h3>
-                  <p className="text-gray-200">
-                    Limpieza de fin de obra, apartamentos turísticos (Booking) y
-                    hoteles. Garantía de desinfección para entregas rápidas y
-                    seguras.
-                  </p>
+
+                <div className="flex flex-col gap-6 lg:gap-8 lg:min-h-[540px]">
+                  <div className="bg-white rounded-3xl shadow-xl border border-orange-100 p-8 flex flex-col gap-5 lg:max-w-sm lg:self-start">
+                    <div className="flex items-center justify-between gap-3">
+                      <div className="flex items-center gap-3">
+                        <span className="text-3xl">🏗️</span>
+                        <p className="text-xs font-semibold tracking-wide text-orange-600 uppercase">
+                          Reformas Integrales
+                        </p>
+                      </div>
+                      <span className="text-xs font-semibold text-orange-500 bg-orange-100 px-3 py-1 rounded-full">
+                        Llave en mano
+                      </span>
+                    </div>
+                    <div className="space-y-3">
+                      <h3 className="text-2xl font-bold text-gray-900">
+                        Transforma tu Hogar
+                      </h3>
+                      <p className="text-gray-700">
+                        Reformas de cocinas, baños y viviendas completas con
+                        gestión de licencias, diseño interior y ejecución
+                        coordinada de principio a fin.
+                      </p>
+                    </div>
+                    <ul className="space-y-2 text-sm text-gray-600">
+                      <li className="flex items-center gap-2">
+                        <span className="text-orange-500">•</span> Planificación
+                        y diseño 3D
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="text-orange-500">•</span> Materiales
+                        premium y acabados impecables
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="text-orange-500">•</span> Supervisión
+                        diaria de obra
+                      </li>
+                    </ul>
+                    <a
+                      href="/reformas"
+                      className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-orange-500 hover:bg-orange-600 text-white font-semibold transition-colors"
+                    >
+                      VER REFORMAS INTEGRALES
+                    </a>
+                  </div>
+
+                  <div className="bg-gray-900 rounded-3xl shadow-2xl border border-gray-800 p-8 flex flex-col gap-5 text-white lg:max-w-sm lg:self-end">
+                    <div className="flex items-center justify-between gap-3">
+                      <div className="flex items-center gap-3">
+                        <span className="text-3xl">🧼</span>
+                        <p className="text-xs font-semibold tracking-wide text-orange-300 uppercase">
+                          Limpieza Profesional
+                        </p>
+                      </div>
+                      <span className="text-xs font-semibold text-gray-900 bg-orange-300 px-3 py-1 rounded-full">
+                        Entregas rápidas
+                      </span>
+                    </div>
+                    <div className="space-y-3">
+                      <h3 className="text-2xl font-bold">
+                        Cuidado Profesional Impecable
+                      </h3>
+                      <p className="text-gray-200">
+                        Limpieza posobra, mantenimiento de apartamentos
+                        turísticos y hoteles con protocolos de desinfección
+                        certificados y equipo especializado.
+                      </p>
+                    </div>
+                    <ul className="space-y-2 text-sm text-orange-100/90">
+                      <li className="flex items-center gap-2">
+                        <span className="text-orange-300">•</span> Servicios
+                        express para entregas urgentes
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="text-orange-300">•</span> Productos
+                        ecológicos y antialérgicos
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="text-orange-300">•</span> Reporte
+                        fotográfico antes y después
+                      </li>
+                    </ul>
+                    <a
+                      href="/servicios-limpieza-alicante"
+                      className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-orange-400 hover:bg-orange-300 text-gray-900 font-semibold transition-colors"
+                    >
+                      TARIFAS DE LIMPIEZA TURÍSTICA
+                    </a>
+                  </div>
                 </div>
-                <a
-                  href="/servicios-limpieza-alicante"
-                  className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-orange-500 hover:bg-orange-400 text-gray-900 font-semibold transition-colors"
-                >
-                  TARIFAS DE LIMPIEZA TURÍSTICA
-                </a>
               </div>
             </div>
           </div>
